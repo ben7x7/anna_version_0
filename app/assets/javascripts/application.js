@@ -1,6 +1,8 @@
 //= require jquery
 //= require jquery_ujs
-//= require rails-ujs
+//= require jquery-fileupload/basic
+
 //= require bootstrap-sprockets
-//= require turbolinks
 //= require_tree .
+//= require cloudinary/jquery.cloudinary
+//= require attachinary
