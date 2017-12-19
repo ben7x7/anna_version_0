@@ -1,0 +1,26 @@
+<div class="container">
+
+  <div class="text-center">
+    <p>All Services proposed by:</p>
+    <p>La Panosse Sarl </p>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <% @services.each do |service| %>
+      <div class="agency-card">
+        <div class="title-card">
+          <%= service.activity %>
+        </div>
+        <div class="price-card">
+          <p><%= service.hourly_fee %> € per hour</p>
+        </div>
+        <div class="description-card">
+          <%= service.description  %>
+        </div>
+        <br>
+      </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
