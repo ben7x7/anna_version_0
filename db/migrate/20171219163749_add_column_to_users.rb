@@ -16,5 +16,6 @@ class AddColumnToUsers < ActiveRecord::Migration[5.1]
     add_column :users, :door, :string
     add_column :users, :comment, :text
     add_column :users, :capacity, :string
+    add_column :users, :photo, :string
   end
 end
