@@ -53,8 +53,11 @@ ActiveRecord::Schema.define(version: 20171221181703) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "date"
+
+
     t.date "starting_time"
     t.date "ending_time"
+
     t.index ["service_id"], name: "index_bookings_on_service_id"
     t.index ["user_id"], name: "index_bookings_on_user_id"
   end
