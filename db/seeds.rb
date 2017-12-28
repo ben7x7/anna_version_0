@@ -1,5 +1,9 @@
-Agency.destroy_all
+Booking.destroy_all
 Service.destroy_all
+Agency.destroy_all
+User.destroy_all
+
+
 
 agency1 = Agency.create!(brand: 'La Panosse', created_date: '2000', owner: 'M. Brosse', director: 'M. Bubble', address: '7 Rue Meyerbeer 75009 Paris', phone: '0123455678', contact_person: 'M. Bubble', mobile: '0611223344', email: 'm.bubble@gmail.com', description: 'opening hours...' )
 agency2 = Agency.create!(brand:'Chef at home', created_date: '2010', owner: 'M. Gourmand', director: 'M. Gourmand', address: '14 Bvd Haussmann 75009 Paris', phone: '0142424343', contact_person: 'Loic Gourmand', mobile: '0790082654', email: 'loic.gourmand@chefathome.fr', description: 'Have your own chef working in your kitchen' )
