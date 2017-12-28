@@ -4,6 +4,7 @@
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
 //= require bootstrap-sprockets
-//= require bootstrap-datepicker
+//= require bootstrap-datepicker3
+//= require bootstrap-timepicker3
 //= require_tree .
 
