@@ -1,20 +1,182 @@
 // Specific CSS for your home-page
 
 #banner {
-  background-image: linear-gradient(-225deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.4) 20%), image-url("home.jpg");
-  background-size: cover;
-  height: calc(100vh - 50px);
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #F9D141;
+
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  width: 50%;
+}
+
+.banner-img {
+  background-image: image-url("home.jpg");
+  width: 50%;
+}
+
+.banner-content h1 {
+  color: white;
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.banner-content p {
+  color: #000000;
+  width: 400px;
+}
+
+#home-button {
+  background-color: #F9D141;
+  color: white;
+  border-color: white;
+  border-radius: 25px;
+  border: 3px solid #FFFFFF;
+  width: 250px;
+}
+
+.container {
+  background-color: #FFFFFF;
+  background-size: cover;
+  width: 100%;
+  padding: 50px 50px 50px 50px;
+}
+
+.container-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-title h1 {
+  margin-top: 50px;
+  font-size: 50px;
+  font-weight: bold;
+  color: #000000;
+  max-width: 700px;
+  text-align: center;
+}
+
+.container-title p {
+  font-size: 16px;
+  color: #757D87;
+  max-width: 700px;
+  text-align: center;
+}
+
+.card-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: 300px;
+  margin: 0px;
+  border: 1px solid #fff;
+  margin: 10px 50px;
+  padding: 10px 10px;
+}
+
+.card-title h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #757D87;
+}
+
+.card-icon {
+  color: #F9D141;
+}
+
+#pourquoi {
+  background-color: #F4F4F4;
+  background-size: cover;
+  padding: 110px 0px;
+}
+
+.home-picture {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.text {
+  max-width: 600px;
+  margin-right: 20px;
+}
+
+.text h1 {
+  font-weight: bold;
+}
+
+.text p {
+  color: #757D87;
+  font-size: 16px;
+  padding: 30px 30px 30px 0px;
+}
+
+#contactus {
+  background-color: #F9D141;
+  background-size: cover;
+  padding: 50px 10px;
+  align-text: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.banner-content {
-  color: white;
-  text-align: center;
+#contactus-h1 {
+  color: #FFFFFF;
+  max-width: 700px;
 }
 
-.banner-content h1 {
-  font-size: 62px;
+.container-header h1 {
+  font-size: 42px;
   font-weight: bold;
+  max-width: 700px;
+}
+
+.contact {
+  width: 700px;
+  padding: 50px 0px;
+}
+
+.contact-content h3 {
+  font-size: 16px;
+  color: #757D87;
+  margin-bottom: 0px;
+  margin-top: 5px;
+}
+
+hr {
+  border-top: 1px solid #757D87;
+  margin-top: 5px;
+  margin-bottom: 35px;
+}
+
+#send-button {
+  border: 3px solid #FFFFFF;
+  border-radius: 25px;
+  color: #FFFFFF;
+  width: 80px;
+  background-color: #F9D141;
+  font-weight: bold;
+}
+
+.send-button {
+  display: flex;
+  justify-content: flex-end;
 }

@@ -5,5 +5,6 @@
 //= require attachinary
 //= require bootstrap-sprockets
 //= require bootstrap-datepicker
+//= require bootstrap-timepicker
 //= require_tree .
 

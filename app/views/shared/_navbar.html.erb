@@ -1,7 +1,7 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo-Anna.png", height: 50 %>
+    <%= image_tag "logo-anna.png", height: 50 %>
   <% end %>
 
   <!-- Right Navigation -->
@@ -39,9 +39,16 @@
         </div>
       </div>
     <% else %>
-      <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <!-- Login link (when logged out)
+      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %> -->
+      <%= link_to new_user_session_path do %>
+        <i class="fa fa-sign-in fa-2x"></i> <%= t('.sign_in', default: "") %>
+      <% end %>
     <% end %>
+
+
+
+
   </div>
 
   <!-- Dropdown list appearing on mobile only -->

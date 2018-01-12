@@ -1,9 +1,163 @@
 <body>
   <div id="banner">
     <div class="banner-content">
+      <h1>ANNA</h1>
+      <br>
+      <p>Le service de conciergerie pour les agences de services à domicile et leur clients</p>
+      <br>
+      <button class="btn btn-primary" id="home-button">EN SAVOIR D'AVANTAGE</button>
+    </div>
+    <div class="banner-img" ></div>
+  </div>
+
+  <div class="container">
+    <div class="container-title">
+      <div class="title">
+        <h1>LES EXPERTISES A VOTRE DISPOSITION</h1>
+        <br>
+        <p>Augmenter la rentabilité d’une agence de services aux séniors tout en améliorant significativement la satisfaction des clients et des salariés. <br>
+        Une approche gagnant-gagnant pour tous.</p>
+      </div>
+    </div>
+      <div class="wrapper-cards">
+        <div class="row">
+          <div class="col-xs-12 col-sm-4">
+            <div class="card-home">
+              <div class="card-icon">
+                <i class="fa fa-home fa-3x" aria hidden="true"></i>
+              </div>
+              <div class="card-title">
+                <h3>Conciergerie Clients</h3>
+              </div>
+              <div class="card-text">
+                <p>Compléter l’offre de services traditionnels : prestation de commande de billets sur internet, assistance administrative, …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card-home">
+              <div class="card-icon">
+                <%= image_tag image_url("icon sliders.png") %>
+              </div>
+              <div class="card-title">
+                <h3>Gestion de planning</h3>
+              </div>
+              <div class="card-text">
+                <p>Automatisation des suivis de modifications, optimisation du taux d’activité, minimisation des temps morts entre les interventions, …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card-home">
+              <div class="card-icon">
+                <i class="fa fa-address-book fa-3x" aria hidden="true"></i>
+              </div>
+              <div class="card-title">
+                <h3>Dossiers Clients - CRM</h3>
+              </div>
+              <div class="card-text">
+                <p>Centralisation des informations concernant le client, son domicile, ses habitudes, ses besoins, ses appréciations, ses opérations, …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card-home">
+              <div class="card-icon">
+                <i class="fa fa-users fa-3x"></i>
+              </div>
+              <div class="card-title">
+                <h3>Motivation des intervenants</h3>
+              </div>
+              <div class="card-text">
+                <p>Techniques spécifiques pour augmenter la satisfaction employé, formations pour améliorer la satisfaction client, …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card-home">
+              <div class="card-icon">
+                <%= image_tag image_url("icon circles.png") %>
+              </div>
+              <div class="card-title">
+                <h3>Gestion 'paper-less'</h3>
+              </div>
+              <div class="card-text">
+                <p>Limiter le papier : émission des bulletins de paie, dématérialisation des contrats, signature électronique, coffres forts digitaux, …</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <div class="card-home">
+              <div class="card-icon">
+                <i class="fa fa-plus fa-3x" aria hidden="true"></i>
+              </div>
+              <div class="card-title">
+                <h3>Recrutement Clients & Intervenants</h3>
+              </div>
+              <div class="card-text">
+                <p>Outils présentant des résultats concrets d’améliorations d’expériences clients et employés, outils de parrainage, …</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="pourquoi">
+    <div class="container-content">
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="home-picture">
+            <%= image_tag image_url("starselect.jpeg") %>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="text">
+            <h1>POURQUOI NOUS<br>SOMMES DIFFERENTS</h1>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <br>
+            <button class="btn btn-primary" id="home-button">EN SAVOIR D'AVANTAGE</button>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container" id="contactus">
+    <div class="container-header text-center" >
+      <h1>ENSEMBLE, DEVELOPPONS DE NOUVEAUX SERVICES</h1>
+      <br>
+      <h1 id="contactus-h1">CONTACTEZ NOUS</h1>
+      <br>
+    </div>
+    <div class="row">
       <div class="col-xs-12">
-        <h1>Anna_v.0 is coming soon...</h1>
+        <div class="contact">
+          <div class="contact-content">
+            <h3>First name & Last name</h3><hr>
+            <h3>Email address</h3><hr>
+            <h3>City</h3><hr>
+            <h3>Message</h3><hr>
+            <br>
+          </div>
+          <div class="send-button">
+            <button class="btn btn-primary" id="send-button">SEND</button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </body>
+
+
+
+
+
+
+
+
+
+
