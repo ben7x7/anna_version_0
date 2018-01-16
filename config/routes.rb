@@ -10,7 +10,7 @@ mount Attachinary::Engine => "/attachinary"
     resources :bookings, only: [:create]
   end
 
-    resources :bookings, only: [:index, :show]
+  resources :bookings, only: [:index, :show, :create]
 
 
   root to: 'pages#home'

@@ -5,13 +5,19 @@
   <div class="row">
     <div class="booking">
       <% @bookings.each do |booking| %>
-        <p><%= booking.tool.title %></p>
-        <p><%= booking.user.email %></p>
-        <p><%= booking.start_date %></p>
-        <p><%= booking.end_date %></p>
+        <p><%= booking.status %></p>
+        <p><%= booking.date %></p>
+        <p>from: <%= booking.starting_time %> to: <%= booking.ending_time %></p>
+        <p><%= booking.service.activity %></p>
+        <p><%= booking.user.first_name %> <%= booking.user.last_name %></p>
+        <p><%= booking.user.st_number %> <%= booking.user.street %></p>
+        <p><%= booking.user.zip %> <%= booking.user.city %></p>
+
         <%= link_to 'Your booking', booking_path(booking) %>
-        <p>          ------------          </p>
+        <br>
+        <br>
       <% end %>
+
     </div>
   </div>
 </div>

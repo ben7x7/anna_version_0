@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('.timepicker').timepicker({
-    format: 'HH:ii'
+    format: "H:i"
   });
 });
 
