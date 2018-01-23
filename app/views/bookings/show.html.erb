@@ -1,19 +1,26 @@
 
 <div class="text-center">
    <h2>Your booking details: </h2>
- </div>
+</div>
  <div class="container">
    <div class="row">
      <div class="list bookings">
 
        <p><%= @booking.status %></p>
-       <p><%= @booking.service.activity %></p>
-       <p>on : <%= @booking.date %></p>
+       <p><%= @booking.date %></p>
        <p>from : <%= @booking.starting_time %> to : <%= @booking.ending_time %></p>
+
+       <p><%= @booking.service.activity %></p>
+       <%= image_tag "#{@booking.service.activity.downcase}.png", heigth: 50, crop: :fill %>
+
        <p><%= @booking.user.first_name %> <%= @booking.user.last_name %></p>
+
        <p><%= @booking.user.st_number %> <%= @booking.user.street %></p>
        <p><%= @booking.user.zip %> <%= @booking.user.city %></p>
+
        <p>Price: <%= @booking.price %>. €</p>
 
      </div>
+    <%= link_to 'Bookings list', bookings_path %>
+    <%= link_to 'Services list', agency_services_path(:agency_id) %>
  </div>

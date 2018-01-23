@@ -30,7 +30,7 @@ class BookingsController < ApplicationController
     @booking.service = @service
 
     if @booking.save
-      redirect_to service_path(@service)
+      redirect_to booking_path(@booking)
     else
       render 'services/show'
     end

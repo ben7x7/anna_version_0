@@ -5,12 +5,77 @@ User.destroy_all
 
 
 
-agency1 = Agency.create!(brand: 'La Panosse', created_date: '2000', owner: 'M. Brosse', director: 'M. Bubble', address: '7 Rue Meyerbeer 75009 Paris', phone: '0123455678', contact_person: 'M. Bubble', mobile: '0611223344', email: 'm.bubble@gmail.com', description: 'opening hours...' )
-agency2 = Agency.create!(brand:'Chef at home', created_date: '2010', owner: 'M. Gourmand', director: 'M. Gourmand', address: '14 Bvd Haussmann 75009 Paris', phone: '0142424343', contact_person: 'Loic Gourmand', mobile: '0790082654', email: 'loic.gourmand@chefathome.fr', description: 'Have your own chef working in your kitchen' )
+agency1 = Agency.create!(
+  brand: 'La Panosse',
+  created_date: '2000',
+  owner: 'M. Brosse',
+  director: 'M. Bubble',
+  address: '7 Rue Meyerbeer 75009 Paris',
+  phone: '0123455678',
+  contact_person: 'M. Bubble',
+  mobile: '0611223344',
+  email: 'm.bubble@gmail.com',
+  description: 'opening hours...'
+)
 
-service1 = Service.create!(activity: 'Cleaning', hourly_fee: '20', description: 'sweaping, vacuming, cleaning all romms', agency: agency1 )
-service2 = Service.create!(activity: 'Ironing', hourly_fee: '22', description: 'whatever can be ironed', agency: agency1 )
-service3 = Service.create!(activity: 'Cooking', hourly_fee: '35', description: 'A Chef is cooking in your own kitchen', agency: agency2 )
+agency2 = Agency.create!(
+  brand:'Golden Keys Services',
+  created_date: '2010',
+  owner: 'M. Gourmand',
+  director: 'M. Gourmand',
+  address: '14 Bvd Haussmann 75009 Paris',
+  phone: '0142424343',
+  contact_person: 'Loic Gourmand',
+  mobile: '0790082654',
+  email: 'loic.gourmand@chefathome.fr',
+  description: 'Have your own chef working in your kitchen'
+)
+
+agency3 = Agency.create!(
+  brand: 'Anna Call Center',
+  created_date: '2018',
+  owner: 'M. Anna',
+  director: 'M. Anna',
+  address: '92 rue Caulaincour 75018 Paris',
+  phone: '0144332211',
+  contact_person: 'M. Anna',
+  mobile: '0788990011',
+  email: 'anna@anna.com',
+  description: 'Call center is available from 8:00 to 18:00 from Monday to Friday to answer to your question and assist you to book a new service. '
+)
+
+service1 = Service.create!(
+  activity: 'Housekeeping',
+  hourly_fee: '20',
+  description: 'sweaping, vacuming, cleaning all romms',
+  agency: agency1,
+  picto: File.open("#{Rails.root.to_s}/app/assets/images/housekeeping.png")
+)
+
+service2 = Service.create!(
+  activity: 'Ironing',
+  hourly_fee: '22',
+  description: 'whatever can be ironed',
+  agency: agency1,
+  picto: File.open("#{Rails.root.to_s}/app/assets/images/ironing.png")
+)
+
+service3 = Service.create!(
+  activity: 'Call Center',
+  hourly_fee: '',
+  description: 'Contact us for more information',
+  agency: agency3,
+  picto: File.open("#{Rails.root.to_s}/app/assets/images/call center.png")
+)
+
+service4 = Service.create!(
+  activity: 'Conciergerie',
+  hourly_fee: '',
+  description: 'We provide any services you might need',
+  agency: agency2,
+  picto: File.open("#{Rails.root.to_s}/app/assets/images/conciergerie.png")
+)
+
 
 user = User.create!(
   email: 'james@007.com',
@@ -35,17 +100,17 @@ user = User.create!(
 )
 
 Booking.create!(
-  status: 'reservation',
+  status: 'reserved',
   date: '15/03/2018',
   starting_time: '08:00',
   ending_time: '10:00',
   user: user,
   service: service1,
   price: '45',
-  )
+)
 
 booking_2 = Booking.new(
-  status: 'reservation',
+  status: 'reserved',
   date: '22/03/2018',
   starting_time: '08:00',
   ending_time: '10:00',

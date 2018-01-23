@@ -1,27 +1,92 @@
-<div class="container">
+<div class="container-agency">
   <div class="row">
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <div class="agency-card">
-        <%= @agency.brand %>
-        <p>fondée en <%= @agency.created_date %></p>
+    <div class="card-agency text-center">
+      <div class="col-xs-12 col-sm-5">
+        <div class="card-agency-brand">
+          <h2> <%= @agency.brand %> </h2> <br>
+          <p> Since <%= @agency.created_date %> </p>
+        </div>
+      </div>
+      <div class="col-xs-2 col-offset-5 col-sm-2">
+        <div class="card-agency-logo">
+          <h3>logo</h3>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-5 col-offset-7">
+        <div class="card-agency-contactdetails">
+          <div class="card-agency-phone">
+            <i class="fa fa-phone"></i> <%= @agency.phone %>
+          </div>
+          <div class="card-agency-address">
+            <i class="fa fa-map-marker"></i> <%= @agency.address %>
+          </div>
+          <div class="card-agency-opening">
+            <p><i class="fa fa-clock-o"></i> Monday-Friday : 8h-17h</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="card-agency-description">
+            <div class="card-agency-description-title">
+              <h4> <i class="fa fa-share-square"></i>  Description:</h4>
+            </div>
+            <br>
+            <div class="card-agency-description-details">
+              <p><%= @agency.description %></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+         <div class="card-agency-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.2419022821477!2d2.3349305510717726!3d48.87266490755423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e399f6ac9f7%3A0x1b7320b0f9631b55!2s14+Boulevard+Haussmann%2C+75009+Paris!5e0!3m2!1sfr!2sfr!4v1516703987935" width="680" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-        <%= @agency.owner %>
-        <br>
-        <%= @agency.director %>
-        <br>
-        <%= @agency.address %>
-        <br>
-        <%= @agency.phone %>
-        <br>
-        <%= @agency.contact_person %>
-        <br>
-        <%= @agency.mobile %>
-        <br>
-        <%= @agency.email %>
-        <br>
-        <%= @agency.description %>
-
+         </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-6">
+          <div class="card-agency-admin">
+            <div class="card-agency-admin-title">
+              <h4><i class="fa fa-info-circle"></i> Agency admin details:</h4>
+            </div>
+            <br>
+            <div class="card-agency-owner">
+              <p>Owner:</p>
+              <%= @agency.owner %>
+            </div>
+            <div class="card-agency-director">
+              <p>Director:</p>
+              <%= @agency.director %>
+            </div>
+            <div class="card-agency-contactperson">
+              <p>Contact person:</p>
+              <%= @agency.contact_person %>
+            </div>
+            <div class="card-agency-mobile">
+              <p>Mobile:</p>
+              <%= @agency.mobile %>
+            </div>
+            <div class="card-agency-email">
+              <p>Email:</p>
+              <%= @agency.email %>
+            </div>
+            <br>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="message-box">
+            <h4><i class="fa fa-envelope"></i>  Send a message to this agency!</h4>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+

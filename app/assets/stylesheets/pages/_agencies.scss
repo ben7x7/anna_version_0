@@ -1,0 +1,110 @@
+
+.container-agency {
+  background-color: white;
+  padding: 15px;
+
+}
+
+.card-agency-brand {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1;
+  height: 250px;
+  border: 1px solid #757D87;
+}
+
+.card-agency-brand p {
+  color: #757D87;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.card-agency-brand h2 {
+  width: 100%;
+  font-weight: bold;
+  padding-top: 15px;
+  margin-bottom: 0px;
+}
+
+.card-agency-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  h3 {
+    margin-top: 0px;
+  }
+}
+
+.card-agency-contactdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+  p {
+    margin: 0;
+  }
+}
+
+.card-agency-map {
+  height: 300px;
+}
+
+.card-agency-description {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+
+.card-agency-description-title {
+
+
+}
+
+.flex-card-agency-description-details {
+  align-self: strech;
+
+
+}
+
+.card-agency-admin {
+  width: 80%;
+  margin-left: 50px;
+}
+
+.card-agency-owner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.card-agency-director {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.card-agency-contactperson {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.card-agency-mobile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+
+.card-agency-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+

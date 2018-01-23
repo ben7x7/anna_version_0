@@ -9,6 +9,7 @@
         <p><%= booking.date %></p>
         <p>from: <%= booking.starting_time %> to: <%= booking.ending_time %></p>
         <p><%= booking.service.activity %></p>
+        <%= image_tag "#{booking.service.activity.downcase}.png" %>
         <p><%= booking.user.first_name %> <%= booking.user.last_name %></p>
         <p><%= booking.user.st_number %> <%= booking.user.street %></p>
         <p><%= booking.user.zip %> <%= booking.user.city %></p>

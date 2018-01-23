@@ -1,27 +1,58 @@
 <div class="container">
   <div class="row">
+      <h1>Service selected:</h1>
     <div class="col-xs-12 col-sm-6">
-      <div class="agency-card">
+      <div class="wrapper-card">
 
-        <%= @service.activity %>
-        <br>
-        <p><%= @service.hourly_fee %> € per hour</p>
-
-        <%= @service.description  %>
-
+        <div class="card-service">
+          <div class="card-service-activity">
+            <h3> <%= @service.activity %> </h3>
+          </div>
+          <div class="card-service-picto">
+            <%= image_tag "#{@service.activity.downcase}.png" %>
+          </div>
+        </div>
+        <div class="card-service-details">
+          <div class="card-service-agency">
+            <p>Operated by:</p>
+            <p> <%= link_to "#{@service.agency.brand}", agency_path(agency_id: :"#{@service.agency.id}") %></p>
+            <hr>
+          </div>
+          <div class="card-service-price">
+            <p>Hourly price:</p><p> <%= @service.hourly_fee %>.- € </p><hr>
+          </div>
+          <div class="card-service-description">
+            <p>Description:</p>
+            <p><%= @service.description %></p>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="col-xs-12 col-sm-6">
-      <div class="book-form">
+      <div class="booking-form">
         <h3>Book this service !</h3>
         <%= simple_form_for([@service, @booking]) do |f| %>
           <%= f.input :date, as: :string, input_html: { class: 'datepicker' }%>
-          <%= f.input :starting_time, as: :string, input_html: { class: 'timepicker' }%>
-          <%= f.input :ending_time, as: :string, input_html: { class: 'timepicker' }%>
-          <%= f.button :submit, class: 'btn-primary' %>
+        <div class="row">
+          <div class="col-xs-6 col-sm-3">
+            <%= f.input :starting_time, as: :text, input: { class: 'timepicker' }%>
+          </div>
+          <div class="col-xs-6 col-sm-3">
+            <%= f.input :ending_time, as: :text, input: { class: 'timepicker' }%>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <%= f.button :submit, class: 'btn-primary' %>
+          </div>
+        </div>
+
         <% end %>
       </div>
     </div>
   </div>
+  <div class="links">
+    <%= link_to 'Home', root_path %> | <%= link_to 'Index-Services', agency_services_path(:agency_id) %>
+  </div>
 </div>
-
