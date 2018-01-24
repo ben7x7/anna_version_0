@@ -1,6 +1,7 @@
 .sign-in-wrapper {
-  margin-top: 5px;
+  margin-top: 40px;
   background-color: white;
+  opacity: 0.9;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 15px;
@@ -16,6 +17,10 @@
 
 .devise-links {
    display: inline-block;
-
 }
 
+.container-login {
+  background-image: image-url("background.jpg");
+  background-size: cover;
+  height: 100vh;
+}
