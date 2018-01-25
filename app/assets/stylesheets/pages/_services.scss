@@ -1,3 +1,12 @@
+.container-service {
+  display:flex;
+  justify-content: space-between;
+}
+
+.wrapper-card {
+  border: 1px solid #757D87;
+  background-color: #F4F4F4;
+}
 
 .card-service {
   display: flex;
@@ -39,15 +48,36 @@
 
 }
 
-.wrapper-card {
-  border: 1px solid #757D87;
-  background-color: #F4F4F4;
+.card-service-agency {
+  display: inline-flex;
+  width: 100%;
 }
 
-.card-service-agency .card-service-price {
-  display: inline-block;
-  min-width: 200px;
+.card-service-agency-text {
+  width: 50%;
+  text-align: left;
 }
 
+.card-service-agency-value {
+  width: 50%;
+  text-align: right;
+  margin-right: 25px;
+}
+
+.card-service-price {
+  display: inline-flex;
+  width: 100%;
+}
+
+.card-service-price-text {
+  width: 50%;
+  text-align: left;
+}
+
+.card-service-price-value {
+  width: 50%;
+  text-align: right;
+  margin-right: 25px;
+}
 
 
