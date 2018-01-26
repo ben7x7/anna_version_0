@@ -7,10 +7,12 @@
   padding: 15px;
 
   .form-actions {
-    color: #777;
+    color: #757D87;
     a {
-      color: #777;
+      width: 100%;
+      color: #757D87;
       font-size: 16px;
+
     }
   }
 }
@@ -23,4 +25,29 @@
   background-image: image-url("background.jpg");
   background-size: cover;
   height: 100vh;
+}
+
+.sign-up-form {
+  border: 1px solid #ccc;
+  margin-top: 30px;
+  padding: 25px 25px 0px;
+  background-color: white;
+  border-radius: 5px;
+  opacity: 0.9;
+}
+
+#sign-up-button {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  width: 100%;
+  background-color: #F9D141;
+  border-radius: 5px;
+  font-weight: bold;
+  border: 1px solid #ccc;
+  height: 50px;
+}
+
+.container-sign-up {
+  background-image: image-url("background.jpg");
+  background-size: cover;
 }
