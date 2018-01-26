@@ -6,29 +6,29 @@ User.destroy_all
 
 
 agency1 = Agency.create!(
-  brand: 'La Panosse',
+  brand: 'La Panosse Sarl',
   created_date: '2000',
   owner: 'M. Brosse',
   director: 'M. Bubble',
-  address: '7 Rue Meyerbeer 75009 Paris',
+  address: '14 Bvd Haussmann 75009 Paris',
   phone: '0123455678',
   contact_person: 'M. Bubble',
   mobile: '0611223344',
   email: 'm.bubble@gmail.com',
-  description: 'opening hours...'
+  description: 'More than 15 years of experience in the cleaning services. Ironing service is also available'
 )
 
 agency2 = Agency.create!(
   brand:'Golden Keys Services',
   created_date: '2010',
-  owner: 'M. Gourmand',
-  director: 'M. Gourmand',
+  owner: 'M. Laporte',
+  director: 'M. Lafouille',
   address: '14 Bvd Haussmann 75009 Paris',
   phone: '0142424343',
-  contact_person: 'Loic Gourmand',
+  contact_person: 'Loic Trouvetoux',
   mobile: '0790082654',
-  email: 'loic.gourmand@chefathome.fr',
-  description: 'Have your own chef working in your kitchen'
+  email: 'loic.trouvetoux@golden-keys-services.com',
+  description: 'We provide any services you might need. Try it !'
 )
 
 agency3 = Agency.create!(
@@ -36,9 +36,9 @@ agency3 = Agency.create!(
   created_date: '2018',
   owner: 'M. Anna',
   director: 'M. Anna',
-  address: '92 rue Caulaincour 75018 Paris',
+  address: '14 Bvd Haussmann 75009 Paris',
   phone: '0144332211',
-  contact_person: 'M. Anna',
+  contact_person: 'Paul Anna',
   mobile: '0788990011',
   email: 'anna@anna.com',
   description: 'Call center is available from 8:00 to 18:00 from Monday to Friday to answer to your question and assist you to book a new service. '
@@ -47,7 +47,7 @@ agency3 = Agency.create!(
 service1 = Service.create!(
   activity: 'Housekeeping',
   hourly_fee: '20',
-  description: 'sweaping, vacuming, cleaning all romms',
+  description: 'This service includs the following tasks : sweaping, vacuming, cleaning in all the requested rooms',
   agency: agency1,
   picto: File.open("#{Rails.root.to_s}/app/assets/images/housekeeping.png")
 )
@@ -71,7 +71,7 @@ service3 = Service.create!(
 service4 = Service.create!(
   activity: 'Conciergerie',
   hourly_fee: '',
-  description: 'We provide any services you might need',
+  description: 'Ticket corner for concert, operas, painting exposition...',
   agency: agency2,
   picto: File.open("#{Rails.root.to_s}/app/assets/images/conciergerie.png")
 )
@@ -80,7 +80,7 @@ service4 = Service.create!(
 user = User.create!(
   email: 'james@007.com',
   password: 'password',
-  user_type: 'customer',
+  user_type: 'client',
   first_name: 'James',
   last_name: 'Bond',
   phone: '0144444444',

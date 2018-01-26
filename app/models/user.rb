@@ -8,7 +8,7 @@ class User < ApplicationRecord
 
 
 
-  USER_TYPES = ["costumer", "employee", "manager"]
+  USER_TYPES = ["client", "employee", "manager"]
   validates :user_type, inclusion: {in: USER_TYPES}
 
   validates :first_name, presence: true
