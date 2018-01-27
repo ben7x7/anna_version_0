@@ -1,24 +1,36 @@
-<div class="title">
-  <h2>Here is the list of your bookings ! </h2>
-</div>
-<div class="container">
-  <div class="row">
-    <div class="booking">
+<div class="container-index-booking">
+
+  <h2>Index Bookings </h2>
+
+  <table id="table-index-booking">
+    <thead>
+      <tr>
+        <th class="booking-created-at">MADE ON</th>
+        <th class="booking-status">STATUS</th>
+        <th class="booking-service">SERVICE</th>
+        <th class="booking-date">DATE</th>
+        <th class="booking-starting-time">FROM</th>
+        <th class="booking-ending-time">TO</th>
+        <th class="booking-user">CLIENT</th>
+        <th class="booking-address">ADDRESS</th>
+        <th class="booking-links">show|edit|delete</th>
+      </tr>
+    </thead>
+    <tbody>
       <% @bookings.each do |booking| %>
-        <p><%= booking.status %></p>
-        <p><%= booking.date %></p>
-        <p>from: <%= booking.starting_time %> to: <%= booking.ending_time %></p>
-        <p><%= booking.service.activity %></p>
-        <%= image_tag "#{booking.service.activity.downcase}.png" %>
-        <p><%= booking.user.first_name %> <%= booking.user.last_name %></p>
-        <p><%= booking.user.st_number %> <%= booking.user.street %></p>
-        <p><%= booking.user.zip %> <%= booking.user.city %></p>
-
-        <%= link_to 'Your booking', booking_path(booking) %>
-        <br>
-        <br>
+        <tr class="booking">
+          <td><%= booking.created_at %></td>
+          <td><%= booking.status %></td>
+          <td><%= booking.service.activity %></td>
+          <td><%= booking.date %></td>
+          <td><%= booking.starting_time %></td>
+          <td><%= booking.ending_time %></td>
+          <td><%= booking.user.first_name %> <%= booking.user.last_name %></td>
+          <td><%= booking.user.st_number %> <%= booking.user.street %> <%= booking.user.zip %> <%= booking.user.city %></td>
+          <td><%= link_to 'show', booking_path(booking) %></td>
+        </tr>
       <% end %>
-
-    </div>
-  </div>
+    </tbody>
+    <tfoot></tfoot>
+  </table>
 </div>

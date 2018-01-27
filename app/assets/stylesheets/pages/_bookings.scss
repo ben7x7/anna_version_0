@@ -1,1 +1,47 @@
+.container-index-booking {
+  padding: 15px;
+  text-align: center;
+}
 
+table-index-bookings {
+  width: 100%;
+  margin: 20px auto;
+}
+
+th {
+  padding: 10px;
+  border: solid 1px;
+  text-align: center;
+}
+
+.booking-created-at,
+.booking-date
+{
+  width: 11%;
+}
+
+.booking-starting-time,
+.booking-ending-time
+{
+  width: 7%;
+}
+
+.booking-service {
+  width: 14%
+}
+
+.booking-status {
+  width: 10%;
+}
+
+.booking-user {
+  width: 14%;
+}
+
+.booking-address {
+  width: 21%;
+}
+
+.booking-links {
+  width: 5%;
+}
