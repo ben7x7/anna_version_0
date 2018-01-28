@@ -1,5 +1,5 @@
 .container-index-booking {
-  padding: 15px;
+  padding: 0 15px;
   text-align: center;
 }
 
@@ -44,4 +44,43 @@ th {
 
 .booking-links {
   width: 5%;
+}
+
+.container-booking-show {
+  text-align: center;
+}
+
+.wrapper-booking-show {
+  border: 1px solid #ccc;
+  margin: 0 50px 25px 50px;
+  padding: 15px 0px;
+  border-radius: 5px;
+  hr {
+    border-top: 1px solid #ccc;
+    margin: 15px 15px;
+
+  }
+}
+.booking-show-service {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 25px 0;
+}
+
+.booking-show-activity {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.booking-show-service-picto {
+  margin: 25px 0;
+  padding: 25px;
+  border: 2px solid #ccc;
+  width: 150px;
+}
+
+.booking-show-links {
+  margin-bottom: 25px;
 }

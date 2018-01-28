@@ -1,26 +1,61 @@
 
-<div class="text-center">
-   <h2>Your booking details: </h2>
-</div>
- <div class="container">
-   <div class="row">
-     <div class="list bookings">
-
-       <p><%= @booking.status %></p>
-       <p><%= @booking.date %></p>
-       <p>from : <%= @booking.starting_time %> to : <%= @booking.ending_time %></p>
-
-       <p><%= @booking.service.activity %></p>
-       <%= image_tag "#{@booking.service.activity.downcase}.png", heigth: 50, crop: :fill %>
-
-       <p><%= @booking.user.first_name %> <%= @booking.user.last_name %></p>
-
-       <p><%= @booking.user.st_number %> <%= @booking.user.street %></p>
-       <p><%= @booking.user.zip %> <%= @booking.user.city %></p>
-
-       <p>Price: <%= @booking.price %>. €</p>
-
-     </div>
-    <%= link_to 'Bookings list', bookings_path %>
+<div class="container-booking-show">
+  <h3>Your booking details: </h3>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="wrapper-booking-show">
+        <div class="booking-show">
+          <div class="row">
+            <div class="booking-show-status">
+              <%= @booking.status %> <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6 ">
+              <%= @booking.date %>
+            </div>
+            <div class="col-xs-6 ">
+              from : <%= @booking.starting_time %>
+              to : <%= @booking.ending_time %>
+            </div>
+          </div>
+          <div class="row">
+            <div class="booking-show-service">
+              <div class="booking-show-activity">
+                <div class="card-service-activity">
+                  <h3> <%= @booking.service.activity %> </h3>
+                </div>
+                <div class="card-service-picto">
+                  <%= image_tag "#{@booking.service.activity.downcase}.png"  %>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="booking-show-user">
+              <%= @booking.user.first_name %> <%= @booking.user.last_name %> <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="booking-show-address">
+              <%= @booking.user.st_number %>
+              <%= @booking.user.street %> <br>
+              <%= @booking.user.zip %>
+              <%= @booking.user.city %> <hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="booking-show-price">
+              Price: <%= @booking.price %>. €
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="booking-show-links">
+    <%= link_to 'Back', :back %> |
+    <%= link_to 'Bookings list', bookings_path %> |
     <%= link_to 'Services list', agency_services_path(:agency_id) %>
- </div>
+  </div>
+</div>
