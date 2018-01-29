@@ -1,6 +1,7 @@
 .container-service {
-  display:flex;
-  justify-content: space-between;
+  display:block;
+  justify-content: center;
+  text-align: center;
 }
 
 .wrapper-card {
@@ -78,6 +79,13 @@
   width: 50%;
   text-align: right;
   margin-right: 25px;
+}
+
+#booking-button {
+  width: 100px;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: #F9D141;
 }
 
 

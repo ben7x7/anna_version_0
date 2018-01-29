@@ -12,9 +12,11 @@
           </div>
           <div class="row">
             <div class="col-xs-6 ">
+              <i class="fa fa-calendar"></i>
               <%= @booking.date %>
             </div>
             <div class="col-xs-6 ">
+              <i class="fa fa-clock-o"></i>
               from : <%= @booking.starting_time %>
               to : <%= @booking.ending_time %>
             </div>
@@ -33,11 +35,13 @@
           </div>
           <div class="row">
             <div class="booking-show-user">
+              <i class="fa fa-user"></i>
               <%= @booking.user.first_name %> <%= @booking.user.last_name %> <hr>
             </div>
           </div>
           <div class="row">
             <div class="booking-show-address">
+              <i class="fa fa-map-marker"></i>
               <%= @booking.user.st_number %>
               <%= @booking.user.street %> <br>
               <%= @booking.user.zip %>
@@ -46,6 +50,7 @@
           </div>
           <div class="row">
             <div class="booking-show-price">
+              <i class="fa fa-usd"></i>
               Price: <%= @booking.price %>. €
             </div>
           </div>
@@ -53,7 +58,7 @@
       </div>
     </div>
   </div>
-  <div class="booking-show-links">
+  <div class="bottom-links">
     <%= link_to 'Back', :back %> |
     <%= link_to 'Bookings list', bookings_path %> |
     <%= link_to 'Services list', agency_services_path(:agency_id) %>
