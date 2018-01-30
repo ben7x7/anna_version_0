@@ -1,8 +1,13 @@
 
 .container-agency {
-  background-color: white;
-  padding: 15px;
+  margin: 15px;
+}
 
+.card-agency {
+  border: 1px solid #757D87;
+  border-radius: 5px;
+  background-color: white;
+  margin: 0 15px;
 }
 
 .card-agency-brand {
@@ -10,7 +15,7 @@
   flex-direction: column;
   justify-content: center;
   line-height: 1;
-  height: 250px;
+  height: 200px;
 }
 
 .card-agency-brand p {
@@ -30,7 +35,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 250px;
+  height: 200px;
   h3 {
     margin-top: 0px;
   }
@@ -40,7 +45,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 250px;
+  height: 200px;
   p {
     margin: 0;
   }
@@ -56,15 +61,6 @@
   height: 300px;
 }
 
-.card-agency-description-title {
-
-
-}
-
-.flex-card-agency-description-details {
-
-
-}
 
 .card-agency-admin {
   width: 80%;
