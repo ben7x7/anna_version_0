@@ -99,6 +99,28 @@ user = User.create!(
   photo_url: 'http://res.cloudinary.com/bessiere/image/upload/v1515865507/james_ruvrbe.jpg'
 )
 
+user2 = User.create!(
+  email: 'maria@lapanaosse.fr',
+  password: 'password',
+  user_type: 'employee',
+  first_name: 'Maria',
+  last_name: 'Da Silva',
+  phone: '0155555555',
+  mobile: '0619283746',
+  st_number: '14',
+  street: 'av Foch',
+  zip: '75016',
+  city: 'Paris',
+  building: '',
+  code: '',
+  floor: '',
+  lift: true,
+  door: '',
+  comment: '',
+  capacity: '',
+  photo_url: 'http://res.cloudinary.com/bessiere/image/upload/v1515865523/mariadasilva.png'
+)
+
 Booking.create!(
   status: 'reserved',
   date: '15/03/2018',
