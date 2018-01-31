@@ -6,6 +6,7 @@ class User < ApplicationRecord
 
   has_attachment :photo
 
+  has_many :employees
 
 
   USER_TYPES = ["client", "employee", "manager"]
