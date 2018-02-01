@@ -1,0 +1,15 @@
+<div class="container-employees">
+  <div class="row">
+    <% @employees.each do |employee| %>
+      <%= cl_image_tag employee.user.photo, width: 50, height: 50, crop: :fill, class:"avatar" %>
+      <%= employee.user.first_name %>
+      <%= employee.user.last_name %>
+      <%= employee.activity %>
+      <%= employee.contract %>
+      <%= employee.hired_date %>
+      <%= employee.hourly_rate %>
+      <%= employee.rib %>
+      <br>
+    <% end %>
+  </div>
+</div>
