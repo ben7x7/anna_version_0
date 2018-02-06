@@ -26,7 +26,7 @@
           <td><%= booking.starting_time %></td>
           <td><%= booking.ending_time %></td>
           <td><%= booking.user.first_name %> <%= booking.user.last_name %></td>
-          <td><%= booking.user.st_number %> <%= booking.user.street %> <%= booking.user.zip %> <%= booking.user.city %></td>
+          <td><%= booking.user.st_number %> <%= booking.user.street %>  <br> <%= booking.user.zip %> <%= booking.user.city %></td>
           <td><%= link_to 'show', booking_path(booking) %></td>
         </tr>
       <% end %>

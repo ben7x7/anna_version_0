@@ -1,7 +1,7 @@
 <div class="container-employees">
   <div class="row">
     <% @employees.each do |employee| %>
-      <%= cl_image_tag employee.user.photo, width: 50, height: 50, crop: :fill, class:"avatar" %>
+      <%= cl_image_tag image_path_for(employee.user), width: 50, height: 50, crop: :fill, class:"avatar" %>
       <%= employee.user.first_name %>
       <%= employee.user.last_name %>
       <%= employee.activity %>
