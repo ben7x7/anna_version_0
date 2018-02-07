@@ -6,6 +6,7 @@
  +      <%= simple_form_for(@booking) do |f| %>
  +        <%= f.input @booking.user %>
   +       <%= f.input @booking.service %>
+          <%= f.input @booking.status default: "reservation" %>
           <%= f.input :date, as: :string, input_html: { class: 'datepicker'} %>
  +        <%= f.input :starting_time, as: :text, input_html: { class: 'timepicker' } %>
  +        <%= f.input :ending_time, as: :text, input_html: { class: 'timepicker' } %>

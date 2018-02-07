@@ -277,7 +277,7 @@ user9 = User.create!(
 )
 
 employee1 = Employee.create!(
-  activity:'Housekeper',
+  activity:'Housekeeper',
   contract: 'CDI',
   hired_date: '01/07/2010',
   rib: 'FR1212345123451234567A01234',
@@ -287,7 +287,7 @@ employee1 = Employee.create!(
 )
 
 employee2 = Employee.create!(
-  activity:'Housekeper',
+  activity:'Housekeeper',
   contract: 'CDD',
   hired_date: '01/10/2012',
   rib: 'FR1212345123451234567B01234',
