@@ -9,19 +9,19 @@ class BookingsController < ApplicationController
     @service = Service.new
   end
 
-  # def edit
-  #   @service = Service.find(params[:id])
-  # end
+  def edit
+    @booking = Booking.find(params[:id])
+  end
 
-  # def update
-  #   @service = Service.find(params[:id])
-  #   @service.user = current_user
-  #   if @service.update(service_params)
-  #     redirect_to service_path(@service)
-  #   else
-  #     render 'edit'
-  #   end
-  # end
+  def update
+    @booking = Booking.find(params[:id])
+    @booking.user = current_user
+    if @booking.update(booking_params)
+      redirect_to booking_path(@booking)
+    else
+      render 'edit'
+    end
+  end
 
   def create
     @booking = Booking.new(booking_params)

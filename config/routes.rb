@@ -11,7 +11,7 @@ mount Attachinary::Engine => "/attachinary"
     resources :bookings, only: [:create]
   end
 
-  resources :bookings, only: [:index, :show, :create]
+  resources :bookings, only: [:index, :show, :create, :edit, :update, :delete]
 
   resources :employees, only: [:show, :edit]
 

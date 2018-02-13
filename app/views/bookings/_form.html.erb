@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6">
+     <title>Book this service !</title>
+      <BR>
+      <%= simple_form_for(@booking) do |f| %>
+
+
+        <%= f.input :status, default: "reservation" %>
+        <%= f.input :date, as: :string, input_html: { class: 'datepicker'} %>
+        <%= f.input :starting_time, as: :text, input_html: { class: 'timepicker' } %>
+        <%= f.input :ending_time, as: :text, input_html: { class: 'timepicker' } %>
+      <BR>
+        <%= f.button :submit %>
+      <% end %>
+      <BR>
+    </div>
+  </div>
+</div>
