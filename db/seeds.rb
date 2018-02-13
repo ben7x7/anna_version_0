@@ -48,7 +48,7 @@ agency3 = Agency.create!(
 service1 = Service.create!(
   activity: 'Housekeeping',
   hourly_fee: '20',
-  description: 'This service includs the following tasks : sweaping, vacuming, cleaning in all the requested rooms',
+  description: 'This service includes the following tasks : sweaping, vacuming, cleaning in all the requested rooms',
   agency: agency1,
   picto: File.open("#{Rails.root.to_s}/app/assets/images/housekeeping.png")
 )
@@ -347,7 +347,7 @@ employee7 = Employee.create!(
 )
 
 Booking.create!(
-  status: 'reservation',
+  status: 'RESERVATION',
   date: '15/03/2018',
   starting_time: '08:00',
   ending_time: '10:00',
@@ -357,13 +357,13 @@ Booking.create!(
 )
 
 booking_2 = Booking.new(
-  status: 'reservation',
+  status: 'CONFIRMED',
   date: '22/03/2018',
   starting_time: '08:00',
   ending_time: '10:00',
   user: user2,
-  service: service1,
-  price: '45',
+  service: service2,
+  price: '44',
 )
 
 booking_2.save!

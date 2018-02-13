@@ -3,19 +3,22 @@
   justify-content: center;
   text-align: center;
 }
-
 .wrapper-card {
-  border: 1px solid #757D87;
-  background-color: #F4F4F4;
+  border: 1px solid #ccc;
+  background-color: white;
+  margin-left: 15px;
+  padding: 50px 0px;
+  border-radius: 5px;
 }
-
+.wrapper-card-service {
+  margin: 15px 0px;
+}
 .card-service {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  border: 1px solid #ccc;
+  position: relative;
 }
-
 .card-service-picto {
   display: flex;
   align-items: center;
@@ -29,12 +32,10 @@
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-
 .card-service-picto img {
   height: 100px;
   width: 100px;
 }
-
 .card-service-activity {
   display: flex;
   align-items: center;
@@ -48,50 +49,53 @@
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
-
 .card-service-details {
+  display: inline-flex;
+  flex-direction: column;
   width: 500px;
   margin: 10px 50px;
-
 }
-
-.card-service-agency {
+.card-service-agency,
+.card-service-price {
   display: inline-flex;
   width: 100%;
+  height: 50px;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  p {
+    margin: 0;
+  }
 }
-
 .card-service-agency-text {
   width: 50%;
   text-align: left;
 }
-
 .card-service-agency-value {
   width: 50%;
   text-align: right;
-  margin-right: 25px;
 }
-
-.card-service-price {
-  display: inline-flex;
-  width: 100%;
-}
-
 .card-service-price-text {
   width: 50%;
   text-align: left;
 }
-
 .card-service-price-value {
   width: 50%;
   text-align: right;
-  margin-right: 25px;
 }
-
+.card-service-description {
+  padding-top: 10px;
+}
 #booking-button {
   width: 100px;
   font-weight: bold;
   border-radius: 25px;
   background-color: #F9D141;
 }
-
+.card-service-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
 
