@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
-ruby '2.3.5'
+ruby '2.5.3'
 
 
-gem 'devise'
+gem 'devise', '>= 4.6.0'
 gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'pg'
@@ -18,7 +18,7 @@ gem 'attachinary', github: 'assembler/attachinary'
 gem 'jquery-fileupload-rails'
 gem 'coffee-rails'
 gem 'autoprefixer-rails'
-gem 'bootstrap-sass'
+gem "bootstrap-sass", ">= 3.4.1"
 gem 'font-awesome-sass'
 gem 'jquery-rails'
 gem 'sass-rails'

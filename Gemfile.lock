@@ -63,9 +63,9 @@ GEM
     bindex (0.5.0)
     bootstrap-datepicker-rails (1.8.0.1)
       railties (>= 3.0)
-    bootstrap-sass (3.3.7)
+    bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
-      sass (>= 3.3.4)
+      sassc (>= 2.0.0)
     builder (3.2.3)
     byebug (10.0.2)
     cloudinary (1.1.7)
@@ -83,7 +83,7 @@ GEM
     crass (1.0.4)
     declarative (0.0.10)
     declarative-option (0.1.0)
-    devise (4.5.0)
+    devise (4.6.2)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
       railties (>= 4.1.0, < 6.0)
@@ -204,9 +204,9 @@ GEM
       declarative (< 0.1.0)
       declarative-option (< 0.2.0)
       uber (< 0.2.0)
-    responders (2.4.0)
-      actionpack (>= 4.2.0, < 5.3)
-      railties (>= 4.2.0, < 5.3)
+    responders (2.4.1)
+      actionpack (>= 4.2.0, < 6.0)
+      railties (>= 4.2.0, < 6.0)
     rest-client (2.0.2)
       http-cookie (>= 1.0.2, < 2.0)
       mime-types (>= 1.16, < 4.0)
@@ -275,11 +275,11 @@ DEPENDENCIES
   attachinary!
   autoprefixer-rails
   bootstrap-datepicker-rails
-  bootstrap-sass
+  bootstrap-sass (>= 3.4.1)
   bootstrap-timepicker-rails!
   cloudinary (= 1.1.7)
   coffee-rails
-  devise
+  devise (>= 4.6.0)
   figaro
   font-awesome-sass
   google-api-client
@@ -301,7 +301,7 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 RUBY VERSION
-   ruby 2.3.5p376
+   ruby 2.5.3p105
 
 BUNDLED WITH
-   1.16.0
+   1.17.3
